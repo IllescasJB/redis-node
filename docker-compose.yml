@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  redis-node:
+    image: 771475992176.dkr.ecr.us-west-1.amazonaws.com/redis-node:0.0.1
+    ports:
+      - 3000:3000
+  redis:
+    image: redis
+    ports:
+      - 6379:6379
+volumes:
+  redis_data:
